@@ -103,7 +103,13 @@ Access the Tester Web Interface on [http://localhost:5050/](http://localhost:505
 
 <p align="center"><img src="img/testerWeb.png" width="750")<p>
   
-With this tester interface, you can deploy clientApps automatically, schedule them to start and stop ingestion and receive metrics. The clientBatchIngestApp Monitor returns raw metrics data json plus information about failed ingestions. The clientStreamIngestApp Monitor return refined (calculated) metrics as well as information on failed ingestions.
+With this tester interface, you can deploy clientApps automatically, schedule them to start and stop ingestion and receive metrics. 
   
-#### Deploy clientApps
+The clientBatchIngestApp Monitor returns raw metrics data json plus information about failed ingestions. 
+  
+The clientStreamIngestApp Monitor return refined (calculated) metrics as well as information on failed ingestions.
+  
+#### Deploy clientApps & get metrics
+Drag and drop any client App from `/code/clientApps` the web interface will confirm the receive. In order to deploy client's app, predd deploy. The client Batch/Stream IngestManager will automatically set the apps to their service prfiles.
 
+Try scheduling the apps ON and OFF. Click "metrics" to receive metrics from the Monitor.
