@@ -96,4 +96,6 @@ For example, clientapp with service profile 1 has sent 1 GB of data for last 1 h
   
   #### MAX DATA TESTS STATS
   
+### 1.4 Implement and provide logging features for capturing successful/failed ingestion as well as metrics about ingestion time, data size, etc., for files which have been ingested into mysimbdp. Logging information must be stored in separate files, databases or a monitoring system for analytics of ingestion. Explain how mysimbdp could use such logging information. Show and explain simple statistical data extracted from logs for individual tenants and for the whole platform with your tests.
+  
 
