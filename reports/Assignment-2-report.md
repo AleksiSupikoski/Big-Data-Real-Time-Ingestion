@@ -94,7 +94,7 @@ While explaining the previous parts i have already touched the aspect of accessi
   
 For example, clientapp with service profile 1 has sent 1 GB of data for last 1 h, the service profile will not allow it to send any more data, so the data will be kept in a queue. after an hour passes after the ingestion started the queue will  be emptied for exactly 1 GB / h. Or for example clientapp has read 500 files for last hour, it willnot be allowed to read more (by the service) and when an hour passes, the queued files will be  be passed to it.
   
-Testing max data performance with apps running for 5 minutes the statistics shown in 1.5 "Batch Ingest Monitor with 2 apps writing data for 5 mins" were received.
+Testing max data performance with apps running for 5 minutes the statistics shown in 1.5 "Batch Ingest Monitor with 2 apps writing data for 5 mins" were received. So with a rough calculation 15 MB * 2 / ( 5 * 60) = 1 MB/s, which is bad. (I had hard time running the tests on my laptop, for some reason docker would not free up it's VM's memory out of ram for some reason, so this is all i have got. I wish i had time to do benchmarks on cloud)
   
 ### 1.5 Implement and provide logging features for capturing successful/failed ingestion as well as metrics about ingestion time, data size, etc., for files which have been ingested into mysimbdp. Logging information must be stored in separate files, databases or a monitoring system for analytics of ingestion. Explain how mysimbdp could use such logging information. Show and explain simple statistical data extracted from logs for individual tenants and for the whole platform with your tests.
   
