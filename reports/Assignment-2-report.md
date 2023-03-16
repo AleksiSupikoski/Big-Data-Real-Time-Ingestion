@@ -99,7 +99,9 @@ For example, clientapp with service profile 1 has sent 1 GB of data for last 1 h
 ### 1.5 Implement and provide logging features for capturing successful/failed ingestion as well as metrics about ingestion time, data size, etc., for files which have been ingested into mysimbdp. Logging information must be stored in separate files, databases or a monitoring system for analytics of ingestion. Explain how mysimbdp could use such logging information. Show and explain simple statistical data extracted from logs for individual tenants and for the whole platform with your tests.
   
 Additionally to managing the clientBatchIngestApps the clientBatchIngestManager also retrieves Logs from them (though API). The service attaches LogAtribute processor to the end of the pipeline, to keep track of possible failed ingestions, it also retrieves information from the endpoint of the pipeline to keep track of ingestion time, data writes, speed, size etc. provided by the json. The monitoring system fuctionality is implemented in the driver, and can be accessed through it's web interface or with a http request. The data is updated with a moving 5-minute window, which is updated every nanosecond.
-
+  
+<p align="center"><img src="img/BatchMonitor.png" width="750")<p>
+  
 This data is especially interesting to the service provider, for example this data can be retrieved by a load balancer application, that will deploy another Nifi node or a Cassandra node to their clusters when it calculates that the pipeline / ingestion processing rate drops below a threshold, some threshold level.
   #### DATA TESTS STATS
 
@@ -139,3 +141,5 @@ The reporting is done through Nifi's API, in similar manner as in part 1. The re
   
 
 The driver provides monitor that retrieves the data. Whenever data is requested, metrics are calculated by the manager. The driver runs a scheduled task every 5 minutes (within manager) and keeps track of the underperforming client apps. The monitor itself can be read in the driver's web interface or requested with a http -request.
+
+<p align="center"><img src="img/StreamMonitor.png" width="750")<p>
