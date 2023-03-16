@@ -101,4 +101,4 @@ Again, make sure that it gets deployed on the correct network.
 ### Test the Driver with the Tester Web Interface
 Access the Tester Web Interface on [http://localhost:5050/](http://localhost:5050/)
 
-<p align="center"><img src="img/testerWeb.png" width="750")<p>
+<p align="left"><img src="img/testerWeb.png" width="750")<p>
