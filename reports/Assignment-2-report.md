@@ -119,14 +119,23 @@ clientStreamIngestApp is also its own process group that is physically running o
 
 ### 2.2 Design and implement a component mysimbdp-streamingestmanager, which can start and stop clientstreamingestapp instances on-demand. mysimbdp imposes the model that clientstreamingestapp has to follow so that mysimbdp-streamingestmanager can invoke clientstreamingestapp as a blackbox, explain the model.
 
-streamIngestManager is defined as a python object which keeps a list of clientStreamIngestApps and deploys, controls and monitors them over Nifi API. The manager requires a driver (the same thing as mentioned in part 1) for it so physically it runs on a flask app container. The driver provides a web interface for it & for its monitor. Please see clientbatchingestappmanager.py and driver: app.py.
+streamIngestManager is defined as a python object which keeps a list of clientStreamIngestApps and deploys, controls and monitors them over Nifi API. The manager requires a driver (the same thing as mentioned in part 1) for it so physically it runs on a flask app container. The driver provides a web interface for it & for its monitor. Please see clientstreamingestappmanager.py and driver: app.py.
 
 Whenever a new clientStreamIngestApp is deployed (they can only be deployed through the manager, invoked by the driver) the manager receives an abstraction of the clientStreamIngest app and stores it. It uses the abstraction to deploy, schedule and retrieve metrics (through the API) from the actual application pipeline running on Nifi.
 
 ### 2.3 Develop test ingestion programs (clientstreamingestapp), which must include one type of data wrangling (transforming the received message to a new structure). Show the performance of ingestion tests, including failures and exceptions, for at least 2 different tenants in your test environment, explain also the data used for testing. What is the maximum throughput of the ingestion in your tests?
   
-The 
+The clientStreaimIngestApp 1 and 2 simply receive data wrangle it by building cql instert statement. The service will only allow it to write in tenant's own keyspace, othervise it will drop it. It also has to be in correct format. Failed ingestion is logged.
+
+The data used is the same data as in part 1, IoT data from Korkeasaari zoo. The data is produced by MQTT client emulator discussed in 2.1.
+  
+  #### TESTES
 
 ### 2.4 clientstreamingestapp decides to report the its processing rate, including average ingestion time, total ingestion data size, and number of messages to mysimbdp-streamingestmonitor within a pre- defined period of time. Design the report format and explain possible components, flows and the mechanism for reporting.
+  
+The reporting is done through Nifi's API, in similar manner as in part 1. The report is a collection of JSON files (2 of them) one catches failed ingestions from LogAttribute processor attached to the end of the pipeline and the other retrieves data from the end of the pipeline to keep trak of listed parameters (average ingestion time, total ingestion data size, and number of messages) that are calculated from JSON. The data is updated with a moving 5-minute window, which is updated every nanosecond.
 
 ### 2.5 Implement a feature in mysimbdp-streamingestmonitor to receive the report from clientstreamingestapp. Based on the report from clientstreamingestapp, when the performance is below a threshold, e.g., average ingestion time is too low, mysimbdp-streamingestmonitor decides to inform mysimbdp-streamingestmanager about the situation. Implementation a feature in mysimbdp-streamingestmanager to receive information informed by mysimbdp- streamingestmonitor.
+  
+
+The driver provides monitor that retrieves the data. Whenever data is requested, metrics are calculated by the manager. The driver runs a scheduled task every 5 minutes (within manager) and keeps track of the underperforming client apps. The monitor itself can be read in the driver's web interface or requested with a http -request.
