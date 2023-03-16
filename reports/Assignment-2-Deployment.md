@@ -88,4 +88,12 @@ This will deploy a single node nifi container (if you want to try out a 3-node n
 go to [http://localhost:8080/nifi](http://localhost:8080/nifi) to see the web interface No login credentials are needed.
 
 ## Deploy the clientAppsManager Driver with Monitoring Features and Testing Web Interface
-### Deploy Cassandra Cluster in Docker
+### Build Container Image for clientManagers Driver
+Cd into `/code/clientManagersDriver` and build the application:
+
+`docker build -t clientAppsManager .`
+
+Again, make sure that it gets deployed on the correct network.
+
+### Deploy the driver
+`docker run -p 5050:5050  --network="code_default" clientAppsManager`
