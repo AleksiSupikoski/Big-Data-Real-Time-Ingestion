@@ -84,4 +84,4 @@ Whenever a new clientBatchIngestApp is deployed (they can only be deployed throu
   
 The scheduling logic for the manager is defined in the driver. I have set it to schedule all batchIngestApplications running whenever the load on the mysimbdp is low, i.e. more than 50% streamIngestApplications are underperforming (more than 50% of stream apps processing less than 100 messages per hour). Additionally by default the streamBatchIngestApplications are scheduled to run at night, when the load on servers is expected to be lower. For testing purpoces i have commented it out of the code, please uncomment them if you want to test that feature.
   
-  
+For the driver (app.py, which runs the managers) I have developed a web interface that makes testing and monitoring easier. Please read the Deployment instructions to see how to do the tests.
