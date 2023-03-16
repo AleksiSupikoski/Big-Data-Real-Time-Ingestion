@@ -108,7 +108,7 @@ Below is data for two clientBatchIngestApps ingesting data for 5 minutes (from t
 
 <p align="center"><img src="img/2Batch.png" width="750")<p>
 
-***<p style="text-align: center;">Batch Ingest Monitor with 2 apps writing data for 5 mins</p>***
+***<p align="center">Batch Ingest Monitor with 2 apps writing data for 5 mins</p>***
 
 ## 2 - Near-realtime data ingestion
   
