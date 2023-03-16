@@ -85,7 +85,15 @@ This will deploy a single node nifi container (if you want to try out a 3-node n
 
 `docker ps --format '{{ .ID }} {{ .Names }} {{ json .Networks }}'`
 
+CD into `/data` and cp sample date in staging input directory:
+
+`docker cp . nifii:/opt/nifi/nifi-current/StagingInputDirectory`
+
 go to [http://localhost:8080/nifi](http://localhost:8080/nifi) to see the web interface No login credentials are needed.
+
+## Deploy VerneMQ Broker
+### Deploy VerneMQ Broker in Docker
+
 
 ## Deploy the clientAppsManager Driver with Monitoring Features and Testing Web Interface
 ### Build Container Image for clientManagers Driver
