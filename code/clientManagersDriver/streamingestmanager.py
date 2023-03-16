@@ -43,7 +43,7 @@ class streamingestmanager():
 
         p = canvas.get_processor(app.get_app() + "PutCassandraQL", 'name')
         canvas.schedule_processor(p, True)
-
+        time.sleep(1) #too many requests
         p = canvas.get_processor(app.get_app() + "LogFails", 'name')
         canvas.schedule_processor(p, True)
 
@@ -56,7 +56,7 @@ class streamingestmanager():
 
         p = canvas.get_processor(app.get_app() + "PutCassandraQL", 'name')
         canvas.schedule_processor(p, False)
-
+        time.sleep(1) #too many requests
         p = canvas.get_processor(app.get_app() + "LogFails", 'name')
         canvas.schedule_processor(p, False)
 
