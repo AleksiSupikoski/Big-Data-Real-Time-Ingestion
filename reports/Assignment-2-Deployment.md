@@ -111,7 +111,13 @@ The clientStreamIngestApp Monitor return refined (calculated) metrics as well as
   
 #### Deploy clientApps & get metrics
 Drag and drop any client App from `/code/clientApps` the web interface will confirm the receive. In order to deploy client's app, press deploy.
+  
 <p align="center"><img src="img/deployed.png")<p>
+  
+If you go to Apache Nifi web interface, you will see, that tenant's app has been deployed:
+
+<p align="center"><img src="img/clientApp.png")<p>
+  
 The client Batch/Stream IngestManager will automatically set the apps to their service prfiles.
 
 Try scheduling the apps ON and OFF. Click "metrics" to receive metrics from the Monitor.
