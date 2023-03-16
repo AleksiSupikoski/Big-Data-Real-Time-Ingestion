@@ -110,11 +110,22 @@ This data is especially interesting to the service provider, for example this da
   
 ### 2.1 Tenants will put their data into messages and send the messages to a messaging system, mysimbdp- messagingsystem (provisioned by mysimbdp) and tenants will develop ingestion programs, clientstreamingestapp, which read data from the messaging system and ingest the data into mysimbdp-coredms. For near-realtime ingestion, explain your design for the multi-tenancy model in mysimbdp: which parts of the mysimbdp will be shared for all tenants, which parts will be dedicated for individual tenants so that mysimbdp can add and remove tenants based on the principle of pay- per-use. The MQTT receiver is external to the clientStreamIngestApp and managed by service, so that clientApps will not be able to read wrong data. Additional security can be provided by adding client users with their own passwords and usernames in the MQTT borker.
 
-It is expected that Each client has an external MQTT client (MQTT was desided to be used, since the data is IoT data from a korkeassaari Zoo, so MQTT protocol is more desirable). Any client will publish their data to their topics & subtopics. For simplicity i have developed a simple emulator as a nifi flow, that publishes data to MQTT broker on a single topic /data. clientStreamIngestApps receive this data and build a cql insert statement and for ward it to their output port. The data from it will be ingested into the database to their own keyspace, in same manner as explained in part 1.
+It is expected that Each client has an external MQTT client (MQTT was desided to be used, since the data is IoT data from a korkeassaari Zoo, so MQTT protocol is more desirable). Any client will publish their data to their topics & subtopics. 
+
+For simplicity i have developed a simple emulator as a nifi flow, that publishes data to MQTT broker on a single topic /data. clientStreamIngestApps receive this data and build a cql insert statement and for ward it to their output port. The data from it will be ingested into the database to their own keyspace, in same manner as explained in part 1.
   
+clientStreamIngestApp is also its own process group that is physically running on Nifi. It also has an abstraction object, that stores the id of the clientapp and abchup file. These abstraction objects are passed to the manager to control clientapps and keep track of them by from the manager. (Similarly as in part 1)
+  
+
 ### 2.2 Design and implement a component mysimbdp-streamingestmanager, which can start and stop clientstreamingestapp instances on-demand. mysimbdp imposes the model that clientstreamingestapp has to follow so that mysimbdp-streamingestmanager can invoke clientstreamingestapp as a blackbox, explain the model.
 
+streamIngestManager is defined as a python object which keeps a list of clientStreamIngestApps and deploys, controls and monitors them over Nifi API. The manager requires a driver (the same thing as mentioned in part 1) for it so physically it runs on a flask app container. The driver provides a web interface for it & for its monitor. Please see clientbatchingestappmanager.py and driver: app.py.
+
+Whenever a new clientStreamIngestApp is deployed (they can only be deployed through the manager, invoked by the driver) the manager receives an abstraction of the clientStreamIngest app and stores it. It uses the abstraction to deploy, schedule and retrieve metrics (through the API) from the actual application pipeline running on Nifi.
+
 ### 2.3 Develop test ingestion programs (clientstreamingestapp), which must include one type of data wrangling (transforming the received message to a new structure). Show the performance of ingestion tests, including failures and exceptions, for at least 2 different tenants in your test environment, explain also the data used for testing. What is the maximum throughput of the ingestion in your tests?
+  
+The 
 
 ### 2.4 clientstreamingestapp decides to report the its processing rate, including average ingestion time, total ingestion data size, and number of messages to mysimbdp-streamingestmonitor within a pre- defined period of time. Design the report format and explain possible components, flows and the mechanism for reporting.
 
