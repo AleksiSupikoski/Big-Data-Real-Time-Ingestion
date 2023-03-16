@@ -15,7 +15,7 @@ Enter CQL with `cqlsh` then create the needed keyspace for a tenant with
 CREATE KEYSPACE tenant1
   WITH REPLICATION = {
   'class' : 'SimpleStrategy',
-  'replication_factor' : 3
+  'replication_factor' : 2
   };
 ```
 
@@ -23,7 +23,7 @@ CREATE KEYSPACE tenant1
 CREATE KEYSPACE tenant2
   WITH REPLICATION = {
   'class' : 'SimpleStrategy',
-  'replication_factor' : 3
+  'replication_factor' : 2
   };
 ```
 
