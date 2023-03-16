@@ -114,12 +114,12 @@ docker exec vernemq1 vmq-admin cluster show
 ### Build Container Image for clientManagers Driver
 Cd into `/code/clientManagersDriver` and build the application:
 
-`docker build -t clientAppsManager .`
+`docker build -t clientmanagersdriver .`
 
 Again, make sure that it gets deployed on the correct network.
 
 ### Deploy the driver
-`docker run -p 5050:5050  --network="code_default" clientAppsManager`
+`docker run -p 5050:5050  --network="code_default" clientmanagersdriver`
 
 ### Test the Driver with the Tester Web Interface
 Access the Tester Web Interface on [http://localhost:5050/](http://localhost:5050/)
