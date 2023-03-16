@@ -101,3 +101,9 @@ For example, clientapp with service profile 1 has sent 1 GB of data for last 1 h
 Additionally to managing the clientBatchIngestApps the clientBatchIngestManager also retrieves Logs from them (though API). The service attaches LogAtribute processor to the end of the pipeline, to keep track of possible failed ingestions, it also retrieves information from the endpoint of the pipeline to keep track of ingestion time, data writes, speed, size etc. provided by the json. The monitoring system fuctionality is implemented in the driver, and can be accessed through it's web interface or with a http request. The data is updated with a moving 5-minute window, which is updated every nanosecond.
 
 This data is especially interesting to the service provider, for example this data can be retrieved by a load balancer application, that will deploy another Nifi node or a Cassandra node to their clusters when it calculates that the pipeline / ingestion processing rate drops below a threshold, some threshold level.
+  #### DATA TESTS STATS
+
+
+
+
+2 - Near-realtime data ingestion
