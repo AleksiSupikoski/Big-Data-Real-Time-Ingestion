@@ -1,0 +1,98 @@
+<html>
+   <body>
+    <h2>clientBatchIngest Manager: tests</h2>
+    <h3>Tenant1 batchingest with tenantserviceprofile1</h3>
+    <em>Load clientBatchIngestApp in form of a NiFi XML template:</em>
+        <form action = "http://localhost:5050/tenant1/uploader" method = "POST" 
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit"/>
+        </form>   
+        <p>
+            <em>Deploy received clientBatchIngestApp for tenant2 with predefined service profile 1:</em>
+            <a href="http://localhost:5050/tenant1/deploybatch"> DEPLOY   </a>
+        </p>
+        <em>Schedule clientBatchIngestApp by turning it on/off: </em>
+        <a href="http://localhost:5050/tenant1/scheduleON">ON  </a>
+        <em>&nbsp</em>
+        <a href="http://localhost:5050/tenant1/scheduleOFF">OFF   </a>
+        <p>
+            <em>Get metrics for last 5 min:</em>
+            <a href="http://localhost:5050/tenant1/metrics">metrics   </a>
+        </p>
+ 
+
+        <h3>Tenant2 batchingest with tenantserviceprofile2</h3>
+        <em>Load clientBatchIngestApp in form of a NiFi XML template:</em>
+            <form action = "http://localhost:5050/tenant2/uploader" method = "POST" 
+                enctype = "multipart/form-data">
+                <input type = "file" name = "file" />
+                <input type = "submit"/>
+            </form>   
+        
+        <p>
+            <em>Deploy received clientBatchIngestApp for tenant2 with predefined service profile 2:</em>
+            <a href="http://localhost:5050/tenant2/deploybatch"> DEPLOY   </a>
+        </p>
+        <em>Schedule clientBatchIngestApp by turning it on/off: </em>
+        <a href="http://localhost:5050/tenant2/scheduleON">ON  </a>
+        <em>&nbsp</em>
+        <a href="http://localhost:5050/tenant2/scheduleOFF">OFF   </a>
+        <p>
+            <em>Get metrics for last 5 min:</em>
+            <a href="http://localhost:5050/tenant2/metrics">metrics   </a>
+        </p>
+
+
+
+        <em>&nbsp</em>
+        <em>&nbsp</em>
+        <em>&nbsp</em>
+
+
+
+        <h2>clientStreamIngest Manager: tests</h2>
+        <h3>Tenant1 streamIngestApp </h3>
+    <em>Load clientStreamIngestApp in form of a NiFi XML template:</em>
+    <form action = "http://localhost:5050/tenant1/uploaderstream" method = "POST" 
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit"/>
+    </form>   
+    <p>
+        <em>Deploy received clientStreamIngestApp for tenant1:</em>
+        <a href="http://localhost:5050/tenant1/deploystream"> DEPLOY   </a>
+    </p>
+    <em>Schedule clientStreamIngestApp by turning it on/off: </em>
+    <a href="http://localhost:5050/tenant1/schedulestreamON">ON  </a>
+    <em>&nbsp</em>
+    <a href="http://localhost:5050/tenant1/schedulestreamOFF">OFF   </a>
+    <p>
+        <em>Get metrics for last 5 min:</em>
+        <a href="http://localhost:5050/tenant1/metricsstream">metrics   </a>
+    </p>
+
+
+
+    <h3>Tenant2 streamIngestApp</h3>
+    <em>Load clientStreamIngestApp in form of a NiFi XML template:</em>
+    <form action = "http://localhost:5050/tenant2/uploaderstream" method = "POST" 
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit"/>
+    </form>   
+    <p>
+        <em>Deploy received clientStreamIngestApp for tenant2:</em>
+        <a href="http://localhost:5050/tenant2/deploystream"> DEPLOY   </a>
+    </p>
+    <em>Schedule clientStreamIngestApp by turning it on/off: </em>
+    <a href="http://localhost:5050/tenant2/schedulestreamON">ON  </a>
+    <em>&nbsp</em>
+    <a href="http://localhost:5050/tenant2/schedulestreamOFF">OFF   </a>
+    <p>
+        <em>Get metrics for last 5 min:</em>
+        <a href="http://localhost:5050/tenant2/metricsstream">metrics   </a>
+    </p>
+
+   </body>
+</html>
