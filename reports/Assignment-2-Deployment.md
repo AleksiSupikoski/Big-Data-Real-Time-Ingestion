@@ -121,11 +121,11 @@ If you go to Apache Nifi web interface, you will see, that tenant's app has been
 The client Batch/Stream IngestManager will automatically set the apps to their service prfiles.
 
 Try scheduling the apps ON and OFF. Click "metrics" to receive metrics from the Monitor.
-<p align="center"><img src="img/StreamMonitor.png" width="750")<p>
+  
+<p align="center"><img src="img/BatchMonitor.png" width="750")<p>
 
 Monitor for streamClientIngestApp:
 
-
-  
+<p align="center"><img src="img/StreamMonitor.png" width="750")<p>
   
 In order to test out streaming apps, you can deploy in Nifi an MQTT client that will publish data to the MQTT Broker, (upload Nifi template from `/code/clientApps/MQTTpublisherSimulator.xml` and turn it on), from which clientStreamIngestApps will receive their data.
