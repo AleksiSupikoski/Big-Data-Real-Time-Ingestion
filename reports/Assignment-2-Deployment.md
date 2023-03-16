@@ -101,4 +101,9 @@ Again, make sure that it gets deployed on the correct network.
 ### Test the Driver with the Tester Web Interface
 Access the Tester Web Interface on [http://localhost:5050/](http://localhost:5050/)
 
-<p align="left"><img src="img/testerWeb.png" width="750")<p>
+<p align="center"><img src="img/testerWeb.png" width="750")<p>
+  
+With this tester interface, you can deploy clientApps automatically, schedule them to start and stop ingestion and receive metrics. The clientBatchIngestApp Monitor returns raw metrics data json plus information about failed ingestions. The clientStreamIngestApp Monitor return refined (calculated) metrics as well as information on failed ingestions.
+  
+#### Deploy clientApps
+
