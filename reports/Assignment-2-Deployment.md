@@ -62,7 +62,7 @@ after that our nifi cluster is set ready for the data to be put into it.
 
 
 ## Deploy and Confugure Apache NiFi
-### Deploy NiFi in a Container
+### Deploy NiFi in a Docker Container
 
 In terminal pull latest Apache NiFi container: `docker pull apache/nifi:latest`
 
@@ -86,3 +86,6 @@ This will deploy a single node nifi container (if you want to try out a 3-node n
 `docker ps --format '{{ .ID }} {{ .Names }} {{ json .Networks }}'`
 
 go to [http://localhost:8080/nifi](http://localhost:8080/nifi) to see the web interface No login credentials are needed.
+
+## Deploy the clientAppsManager Driver with Monitoring Features and Testing Web Interface
+### Deploy Cassandra Cluster in Docker
