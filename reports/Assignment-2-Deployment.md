@@ -58,7 +58,7 @@ temperature float,
 dev_id text,
 PRIMARY KEY (dev_id, readable_time));
 ```
-after that our nifi cluster is set ready for the data to be put into it.
+after that our nifi cluster is set ready to receive data from clientApps deployed under their service profiles.
 
 
 ## Deploy and Confugure Apache NiFi
@@ -97,3 +97,8 @@ Again, make sure that it gets deployed on the correct network.
 
 ### Deploy the driver
 `docker run -p 5050:5050  --network="code_default" clientAppsManager`
+
+### Test the Driver with the Tester Web Interface
+Access the Tester Web Interface on [http://localhost:5050/](http://localhost:5050/)
+
+
