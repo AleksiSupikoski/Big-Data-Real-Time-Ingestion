@@ -103,8 +103,10 @@ Additionally to managing the clientBatchIngestApps the clientBatchIngestManager 
 <p align="center"><img src="img/BatchMonitor.png" width="750")<p>
   
 This data is especially interesting to the service provider, for example this data can be retrieved by a load balancer application, that will deploy another Nifi node or a Cassandra node to their clusters when it calculates that the pipeline / ingestion processing rate drops below a threshold, some threshold level.
-  #### DATA TESTS STATS
 
+Below is data for two clientBatchIngestApps ingesting data for 5 minutes (from the start, so some time went for processing inside applications, before infegestion itself) Screenshot taken from driver's web interfaces showing metrics.
+
+<p align="center"><img src="img/2Batch.png" width="750")<p>
 
 
 
