@@ -59,3 +59,27 @@ dev_id text,
 PRIMARY KEY (dev_id, readable_time));
 ```
 after that our nifi cluster is set ready for the data to be put into it.
+
+
+## Deploy and Confugure Apache NiFi
+### Deploy NiFi in a Container
+
+In terminal pull latest Apache NiFi container: `docker pull apache/nifi:latest`
+
+
+Deploy the container with
+```
+docker run -p 8080:8080 -d \
+-e NIFI_WEB_HTTP_HOST="0.0.0.0" \
+-e NIFI_WEB_HTTP_PORT="8080" \
+-e NIFI_WEB_HTTPS_PORT="" \
+-e NIFI_WEB_PROXY_CONTEXT_PATH="/" \
+-e NIFI_WEB_PROXY_HOST="" \
+-e NIFI_WEB_PROXY_PORT="" \
+-e NIFI_WEB_SECURITY_ENABLED="false" \
+--network="code_default" --name nifii \
+-e JVM_HEAP_SIZE=8g \
+```
+This will deploy a single node nifi container (if you want to try out a 3-node nifi cluster use the yml file for it in /code. We give the nifi extra heap, for better logging. Note that we wet the network to the docker network of the cassandra cluter, by default it will be called "code_default". Makse sure that the containers have beend deployed to the same network with:
+`docker ps --format '{{ .ID }} {{ .Names }} {{ json .Networks }}'`
+go to [http://localhost:8080/nifi](http://localhost:8080/nifi) to see the web interface and log in with the received credentials.
