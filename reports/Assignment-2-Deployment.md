@@ -121,3 +121,4 @@ If you go to Apache Nifi web interface, you will see, that tenant's app has been
 The client Batch/Stream IngestManager will automatically set the apps to their service prfiles.
 
 Try scheduling the apps ON and OFF. Click "metrics" to receive metrics from the Monitor.
+<p align="center"><img src="img/BatchMonitor.png" width="450")<p>
