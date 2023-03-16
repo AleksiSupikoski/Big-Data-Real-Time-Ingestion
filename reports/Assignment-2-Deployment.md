@@ -93,8 +93,23 @@ go to [http://localhost:8080/nifi](http://localhost:8080/nifi) to see the web in
 
 ## Deploy VerneMQ Broker
 ### Deploy VerneMQ Broker in Docker
+Deploy first node of VerneMQ:
+`docker run -p 1883:1883 -e "DOCKER_VERNEMQ_ACCEPT_EULA=yes" -e "DOCKER_VERNEMQ_ALLOW_ANONYMOUS=on" --network="code_default" --name vernemq1 -d vernemq/vernemq`
 
+Another node can be added to VerneMQ (if load rises too high) cluster with:
 
+`docker run -e "DOCKER_VERNEMQ_ACCEPT_EULA=yes" -e "DOCKER_VERNEMQ_DISCOVERY_NODE=<IP-OF-VERNEMQ1>" --name vernemq2 -d vernemq/vernemq`
+
+check cluster status:
+```
+docker exec vernemq1 vmq-admin cluster show
++--------------------+-------+
+|        Node        |Running|
++--------------------+-------+
+|VerneMQ@172.17.0.151| true  |
+|VerneMQ@172.17.0.152| true  |
++--------------------+-------+
+```
 ## Deploy the clientAppsManager Driver with Monitoring Features and Testing Web Interface
 ### Build Container Image for clientManagers Driver
 Cd into `/code/clientManagersDriver` and build the application:
