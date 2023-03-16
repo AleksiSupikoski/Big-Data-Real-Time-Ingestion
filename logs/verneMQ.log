@@ -1,0 +1,36 @@
+config is OK
+-config /vernemq/data/generated.configs/app.2023.03.15.14.01.16.config -args_file /vernemq/bin/../etc/vm.args -vm_args /vernemq/bin/../etc/vm.args
+Exec:  /vernemq/bin/../erts-12.3.2.5/bin/erlexec -boot /vernemq/bin/../releases/1.12.6.2/vernemq               -config /vernemq/data/generated.configs/app.2023.03.15.14.01.16.config -args_file /vernemq/bin/../etc/vm.args -vm_args /vernemq/bin/../etc/vm.args              -pa /vernemq/bin/../lib/erlio-patches -- console -noshell -noinput
+Root: /vernemq/bin/..
+14:01:17.827 [info] alarm_handler: {set,{system_memory_high_watermark,[]}}
+14:01:17.920 [info] writing (updated) old actor <<208,133,186,177,214,252,19,45,165,50,147,145,34,204,135,235,57,221,124,155>> to disk
+14:01:17.925 [info] writing state {[{[{actor,<<208,133,186,177,214,252,19,45,165,50,147,145,34,204,135,235,57,221,124,155>>}],1}],{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[['VerneMQ@172.24.0.7',{[{actor,<<208,133,186,177,214,252,19,45,165,50,147,145,34,204,135,235,57,221,124,155>>}],1}]],[],[],[],[],[],[],[],[]}}},{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}} to disk <<75,2,131,80,0,0,0,248,120,1,203,96,206,97,96,96,96,204,96,130,82,41,12,172,137,201,37,249,69,185,64,81,145,11,173,187,54,94,251,35,172,187,212,104,242,68,165,51,237,175,45,239,214,204,206,74,100,204,202,224,76,97,96,73,201,76,46,73,100,76,20,0,66,142,196,128,68,131,12,129,44,52,144,193,8,23,3,155,14,34,152,82,24,132,194,82,139,242,82,125,3,29,12,205,141,244,140,76,244,12,244,204,73,179,30,110,13,194,29,12,68,186,3,174,21,0,117,162,80,170>>
+14:01:17.944 [info] Opening LevelDB SWC database at "./data/swc_meta/meta1"
+14:01:17.958 [info] Opening LevelDB SWC database at "./data/swc_meta/meta2"
+14:01:17.965 [info] Opening LevelDB SWC database at "./data/swc_meta/meta3"
+14:01:17.970 [info] Opening LevelDB SWC database at "./data/swc_meta/meta4"
+14:01:17.976 [info] Opening LevelDB SWC database at "./data/swc_meta/meta5"
+14:01:17.981 [info] Opening LevelDB SWC database at "./data/swc_meta/meta6"
+14:01:17.987 [info] Opening LevelDB SWC database at "./data/swc_meta/meta7"
+14:01:17.992 [info] Opening LevelDB SWC database at "./data/swc_meta/meta8"
+14:01:17.998 [info] Opening LevelDB SWC database at "./data/swc_meta/meta9"
+14:01:18.003 [info] Opening LevelDB SWC database at "./data/swc_meta/meta10"
+14:01:18.034 [info] Try to start vmq_swc: ok
+14:01:18.066 [info] Opening LevelDB database at "./data/msgstore/1"
+14:01:18.072 [info] Opening LevelDB database at "./data/msgstore/2"
+14:01:18.077 [info] Opening LevelDB database at "./data/msgstore/3"
+14:01:18.081 [info] Opening LevelDB database at "./data/msgstore/4"
+14:01:18.086 [info] Opening LevelDB database at "./data/msgstore/5"
+14:01:18.091 [info] Opening LevelDB database at "./data/msgstore/6"
+14:01:18.096 [info] Opening LevelDB database at "./data/msgstore/7"
+14:01:18.100 [info] Opening LevelDB database at "./data/msgstore/8"
+14:01:18.105 [info] Opening LevelDB database at "./data/msgstore/9"
+14:01:18.110 [info] Opening LevelDB database at "./data/msgstore/10"
+14:01:18.116 [info] Opening LevelDB database at "./data/msgstore/11"
+14:01:18.120 [info] Opening LevelDB database at "./data/msgstore/12"
+14:01:18.144 [info] Try to start vmq_generic_msg_store: ok
+14:01:18.226 [info] loaded 0 subscriptions into vmq_reg_trie
+14:01:18.231 [info] cluster event handler 'vmq_cluster' registered
+14:56:39.112 [warning] client {[],<<"ca97a00a-ec2c-47b5-99a0-e7ce367fb8f8">>} with username undefined stopped due to keepalive expired
+14:56:39.112 [warning] client {[],<<"8a3e951b-4af0-4756-8557-3e05c21e72b4">>} with username undefined stopped due to keepalive expired
+15:07:26.079 [warning] client {[],<<"ca97a00a-ec2c-47b5-99a0-e7ce367fb8f8">>} with username undefined stopped due to keepalive expired
