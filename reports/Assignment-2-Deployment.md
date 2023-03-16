@@ -79,9 +79,10 @@ docker run -p 8080:8080 -d \
 -e NIFI_WEB_SECURITY_ENABLED="false" \
 --network="code_default" --name nifii \
 -e JVM_HEAP_SIZE=8g \
+apache/nifi:1.17.0
 ```
 This will deploy a single node nifi container (if you want to try out a 3-node nifi cluster use the yml file for it in /code. We give the nifi extra heap, for better logging. Note that we wet the network to the docker network of the cassandra cluter, by default it will be called "code_default". Makse sure that the containers have beend deployed to the same network with:
 
 `docker ps --format '{{ .ID }} {{ .Names }} {{ json .Networks }}'`
 
-go to [http://localhost:8080/nifi](http://localhost:8080/nifi) to see the web interface and log in with the received credentials.
+go to [http://localhost:8080/nifi](http://localhost:8080/nifi) to see the web interface No login credentials are needed.
