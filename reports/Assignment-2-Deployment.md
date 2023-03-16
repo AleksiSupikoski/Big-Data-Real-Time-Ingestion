@@ -124,7 +124,7 @@ Try scheduling the apps ON and OFF. Click "metrics" to receive metrics from the 
   
 <p align="center"><img src="img/BatchMonitor.png" width="750")<p>
 
-Monitor for streamClientIngestApp:
+Monitor for streamClientIngestApp (Note the failed ingestions due to tenant1's wrong ingestion format):
 
 <p align="center"><img src="img/StreamMonitor.png" width="750")<p>
   
