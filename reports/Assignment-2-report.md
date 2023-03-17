@@ -112,7 +112,10 @@ Below is data for two clientBatchIngestApps ingesting data for 5 minutes (from t
 
 ***<p align="center">Batch Ingest Monitor with 2 apps writing data for 5 mins</p>***
 
-## 2 - Near-realtime data ingestion
+
+
+# 2 - Near-realtime data ingestion
+  
   
 ### 2.1 Tenants will put their data into messages and send the messages to a messaging system, mysimbdp- messagingsystem (provisioned by mysimbdp) and tenants will develop ingestion programs, clientstreamingestapp, which read data from the messaging system and ingest the data into mysimbdp-coredms. For near-realtime ingestion, explain your design for the multi-tenancy model in mysimbdp: which parts of the mysimbdp will be shared for all tenants, which parts will be dedicated for individual tenants so that mysimbdp can add and remove tenants based on the principle of pay- per-use. The MQTT receiver is external to the clientStreamIngestApp and managed by service, so that clientApps will not be able to read wrong data. Additional security can be provided by adding client users with their own passwords and usernames in the MQTT borker.
 
