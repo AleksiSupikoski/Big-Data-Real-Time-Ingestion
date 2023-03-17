@@ -151,7 +151,7 @@ The driver provides monitor that retrieves the data. Whenever data is requested,
 
 <p align="center"><img src="img/StreamMonitor.png" width="750")<p>
   
-# 3 - ntegration and Extension
+# 3 - Integration and Extension
 
 ### 3.1 Produce an integrated architecture for the logging and monitoring of both batch and near-realtime ingestion features (Part 1, Point 5 and Part 2, Points 4-5) so that you as a platform provider could know the amount of data ingested and existing errors/performance for individual tenants. 
 
