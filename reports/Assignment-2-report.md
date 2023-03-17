@@ -149,4 +149,20 @@ The driver provides monitor that retrieves the data. Whenever data is requested,
 
 <p align="center"><img src="img/StreamMonitor.png" width="750")<p>
   
+# 3 - ntegration and Extension
 
+### 3.1 Produce an integrated architecture for the logging and monitoring of both batch and near-realtime ingestion features (Part 1, Point 5 and Part 2, Points 4-5) so that you as a platform provider could know the amount of data ingested and existing errors/performance for individual tenants. 
+
+I have actually done this, as i saw it more logical for managers to be running on the same driver. So from the clientManagersDriver it is possible to request and monitor in real time data for each tenant and each application.
+
+### 3.2 In the stream ingestion pipeline, assume that a tenant has to ingest the same data but to different sinks, e.g., mybdp-coredms for storage and a new mybdp-streamdataprocessing component, what features/solutions you can provide and recommend to your tenant?
+
+In this case i would provide a special service for the tenant allowing him to have "two client application" running and one having more than one output port, one of which connecting the two applications together.
+  
+
+### 3.3 The tenant wants to protect the data during the ingestion by using some encryption mechanisms to encrypt data in files. Thus, clientbatchingestapp has to deal with encrypted data. Which features/solutions you recommend the tenants and which services you might support them for this goal?
+  
+The tenant would have to add to his batchIngestApp an additional component at the input, that will decrypt the contents of a file. For example this can be done with EncyptContent -processor. The data can also be re encrypted, once the client app has been done processing. and forward encrypted data to the sink. So this does require anything from the service provider, only from the tenant.
+
+### 3.4  In the case of near-realtime ingestion, we want to (i) detect the quality of data to allow ingestion only for data with a pre-defined quality of data condition and (ii) store metadata, including detected quality, into the platform, how would you suggest a design/change of your design for achieving this?
+  
