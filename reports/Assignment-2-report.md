@@ -145,3 +145,5 @@ The reporting is done through Nifi's API, in similar manner as in part 1. The re
 The driver provides monitor that retrieves the data. Whenever data is requested, metrics are calculated by the manager. The driver runs a scheduled task every 5 minutes (within manager) and keeps track of the underperforming client apps. The monitor itself can be read in the driver's web interface or requested with a http -request.
 
 <p align="center"><img src="img/StreamMonitor.png" width="750")<p>
+  
+Accordin to this data the maximum throughput is 80.3 records/s or in size 22.5 kBps.
