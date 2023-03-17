@@ -129,7 +129,7 @@ Whenever a new clientStreamIngestApp is deployed (they can only be deployed thro
 
 ### 2.3 Develop test ingestion programs (clientstreamingestapp), which must include one type of data wrangling (transforming the received message to a new structure). Show the performance of ingestion tests, including failures and exceptions, for at least 2 different tenants in your test environment, explain also the data used for testing. What is the maximum throughput of the ingestion in your tests?
   
-The clientStreaimIngestApp 1 and 2 simply receive data wrangle it by building cql instert statement. The service will only allow it to write in tenant's own keyspace, othervise it will drop it. It also has to be in correct format, for example in the tests monior reports that there is one failed ingestion in both client apps, this is caused by a wrong data format in the CQL insert statement. Failed ingestion is logged.
+The clientStreaimIngestApp 1 and 2 simply receive data and wrangle it by building cql instert statement. The service will only allow it to write in tenant's own keyspace, othervise it will drop it. It also has to be in correct format, for example in the tests monior reports that there is one failed ingestion in both client apps, this is caused by a wrong data format in the CQL insert statement. Failed ingestion is logged.
 
 The data used is the same data as in part 1, IoT data from Korkeasaari zoo. The data is produced by MQTT client emulator discussed in 2.1.
   
