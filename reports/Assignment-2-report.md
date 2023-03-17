@@ -94,7 +94,7 @@ While explaining the previous parts i have already touched the aspect of accessi
   
 For example, clientapp with service profile 1 has sent 1 GB of data for last 1 h, the service profile will not allow it to send any more data, so the data will be kept in a queue. after an hour passes after the ingestion started the queue will  be emptied for exactly 1 GB / h. Or for example clientapp has read 500 files for last hour, it willnot be allowed to read more (by the service) and when an hour passes, the queued files will be  be passed to it.
   
-Testing max data performance with apps running for 5 minutes the statistics shown in 1.5 "Batch Ingest Monitor with 2 apps writing data for 5 mins" were received. So with a rough calculation 15 MB * 2 / ( 5 * 60) = 1 MB/s, which is bad. (I had hard time running the tests on my laptop, for some reason docker would not free up it's VM's memory out of ram for some reason, so this is all i have got. I wish i had time to do benchmarks on cloud)
+Testing max data performance with apps running for 5 minutes the statistics shown in 1.5 "Batch Ingest Monitor with 2 apps writing data for 5 mins" were received. So with a rough calculation 15 MB * 2 / ( 5 * 60) = 1 MB/s, which is bad. (I had hard time running the tests on my laptop, for some reason docker would not free up it's VM's memory out of ram for some reason, so this is all i have got. I wish i had time to do benchmarks on cloud) The test environment had 1-node Nifi cluster.
   
 ### 1.5 Implement and provide logging features for capturing successful/failed ingestion as well as metrics about ingestion time, data size, etc., for files which have been ingested into mysimbdp. Logging information must be stored in separate files, databases or a monitoring system for analytics of ingestion. Explain how mysimbdp could use such logging information. Show and explain simple statistical data extracted from logs for individual tenants and for the whole platform with your tests.
   
@@ -134,16 +134,19 @@ The clientStreaimIngestApp 1 and 2 simply receive data wrangle it by building cq
 The data used is the same data as in part 1, IoT data from Korkeasaari zoo. The data is produced by MQTT client emulator discussed in 2.1.
   
 <p align="center"><img src="img/StreamTests.png" width="750")<p>
-
+  
+Accordin to this data the maximum throughput is 2x 80.3 records/s or in size 2x 22.5 kBps. There was also a MQTT publisher running on the same Nifi node. The test environment had 1-node Nifi cluster.
+  
 ### 2.4 clientstreamingestapp decides to report the its processing rate, including average ingestion time, total ingestion data size, and number of messages to mysimbdp-streamingestmonitor within a pre- defined period of time. Design the report format and explain possible components, flows and the mechanism for reporting.
   
 The reporting is done through Nifi's API, in similar manner as in part 1. The report is a collection of JSON files (2 of them) one catches failed ingestions from LogAttribute processor attached to the end of the pipeline and the other retrieves data from the end of the pipeline to keep trak of listed parameters (average ingestion time, total ingestion data size, and number of messages) that are calculated from JSON. The data is updated with a moving 5-minute window, which is updated every nanosecond.
 
-### 2.5 Implement a feature in mysimbdp-streamingestmonitor to receive the report from clientstreamingestapp. Based on the report from clientstreamingestapp, when the performance is below a threshold, e.g., average ingestion time is too low, mysimbdp-streamingestmonitor decides to inform mysimbdp-streamingestmanager about the situation. Implementation a feature in mysimbdp-streamingestmanager to receive information informed by mysimbdp- streamingestmonitor. The monitor itself can be read in the driver's web interface or data can be requested with a http -request.
-  
+### 2.5 Implement a feature in mysimbdp-streamingestmonitor to receive the report from clientstreamingestapp. Based on the report from clientstreamingestapp, when the performance is below a threshold, e.g., average ingestion time is too low, mysimbdp-streamingestmonitor decides to inform mysimbdp-streamingestmanager about the situation. Implementation a feature in mysimbdp-streamingestmanager to receive information informed by mysimbdp- streamingestmonitor. 
 
+The monitor itself can be read in the driver's web interface or data can be requested with a http -request.
+  
 The driver provides monitor that retrieves the data. Whenever data is requested, metrics are calculated by the manager. The driver runs a scheduled task every 5 minutes (within manager) and keeps track of the underperforming client apps. The monitor itself can be read in the driver's web interface or requested with a http -request.
 
 <p align="center"><img src="img/StreamMonitor.png" width="750")<p>
   
-Accordin to this data the maximum throughput is 80.3 records/s or in size 22.5 kBps.
+
