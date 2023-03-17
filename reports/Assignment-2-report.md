@@ -133,7 +133,7 @@ The clientStreaimIngestApp 1 and 2 simply receive data wrangle it by building cq
 
 The data used is the same data as in part 1, IoT data from Korkeasaari zoo. The data is produced by MQTT client emulator discussed in 2.1.
   
-  #### TESTES
+<p align="center"><img src="img/StreamTests.png" width="750")<p>
 
 ### 2.4 clientstreamingestapp decides to report the its processing rate, including average ingestion time, total ingestion data size, and number of messages to mysimbdp-streamingestmonitor within a pre- defined period of time. Design the report format and explain possible components, flows and the mechanism for reporting.
   
