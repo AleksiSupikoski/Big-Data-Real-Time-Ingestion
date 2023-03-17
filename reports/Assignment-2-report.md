@@ -172,3 +172,5 @@ Assuming that the data is coming from IoT applications, the application could in
   
   
 ### 3.5 If a tenant has multiple clientbatchingestapp, each is suitable for a type of data and has different workloads, such as complex transformation or feature engineering (e.g., different CPUs, memory consumption and execution time), how would you extend your design and implementation in Part 1 (only explain the concept/design) to support this requirement? 
+
+In this case, we would need to have different service profiles for each application under one tenant. We would have to modify the driver to accept that. Additionally, will require for tenant to have multiple different tables in coredms under his keyspace.
