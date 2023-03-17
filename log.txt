@@ -1,0 +1,515 @@
+commit 2ebf76942f77e9761d0f4aa3e583011ae1024df4
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 21:43:57 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 7a6bd7b6a71c5d1f3727672bcc82bf5e06c55083
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 21:42:00 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 5935700efd04154bc5a89dbb5360a37383a020c8
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 21:39:57 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 24b55941e913c463df1ac44aaca0e4bd0d8f336a
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 21:15:37 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 26f5a9ed9ed5ae3a7829624427aed39a1cd45792
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 21:05:09 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 97e05db24f18c82e0accbf0ca6e1481ba179f9b1
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 20:49:39 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 4853ba8088e9bf945b63882a0c856725a6289d30
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 20:45:36 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 24e623501bcf720c576678438a74800f695e69c1
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 20:43:08 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit a9d4de060593b235eef326142b2abeb223b6569f
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 20:26:08 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 42182cc62ec2004ac486df9efef1981b1788b302
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 20:24:55 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit c6e582a205bfe7cc1467ce4e8543f2a02d6e1d5f
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 20:21:22 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 2a0232c5473d8eb083807a82d2c73541feb29202
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 19:57:53 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit f8d4b6c88aff4e12ff272a631468a51ab7938a3f
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 19:48:49 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 9f5cb4022a19e59125c21b46d483c0e297166790
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 19:33:46 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 85839cfd22bade20f58a1a24306bb2a70e8d6452
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 19:19:52 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 6f8c07bdbc38ed1748c2283d2c9a864e685a6c57
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 19:17:52 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 48b0bb7aab1fdaad620455b2709160c63b9a43f7
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 19:15:42 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 11c17ba37b16490bc717faf3e148ea4ea71bf732
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 19:10:45 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 57398c47f47efb66cab6a355895aafbf7bdb4439
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 18:40:48 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 2548749b049c94d286d03bcfe8a2bbb3f784dfa8
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 18:39:50 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit b00401e49402243cf4eda2f7e3bd48e9cd478dcd
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 18:31:38 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 1c755e2b91d3490a048d8527dd239f06a910785b
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 18:30:35 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 5fa5cc16496781e983bca478a7a2ca85534d5cbc
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 18:23:53 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit ad1deaca1372e20afbb034691d96cad508331337
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 18:16:57 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 7f02bee3b1b68360f715ec0d62c05824409a90de
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 18:06:40 2023 +0200
+
+    Update Assignment-2-report.md
+
+commit 3ae69e88c56c783113a2026ce77b50535d288b46
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 18:02:02 2023 +0200
+
+    Create Assignment-2-report.md
+
+commit 408e49dc661e2e4bc0290949065c49b9ac6fc8a0
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:36:38 2023 +0200
+
+    Update README.md
+
+commit 41e5d595fa6d1fea9ce579a965a4c4d7fd8fccfc
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:29:43 2023 +0200
+
+    Create violations.md
+
+commit cfdacd745ff6877d9ea89ecb74b3a17e1d1abc5e
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:28:56 2023 +0200
+
+    Update submitter.csv
+
+commit c84c4b706ce450e4416541439a59a11e0c1f2388
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:28:01 2023 +0200
+
+    Create submitter.csv
+
+commit cf322203ad755862d3c180ab13bb702fd9f5aeb4
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:26:34 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 401b113fe4983edc4592cd67652e7b278561bcd8
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:25:45 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 0a75c37203e19db6d067b74613ff0631c007199d
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:20:54 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 3b7e3dc8922f784f315c47bf9028c89c3fe336d7
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:17:50 2023 +0200
+
+    Create verneMQ.log
+
+commit 2ceecb9e8b45a4cfbc7822a9908467dd079f29a9
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:17:06 2023 +0200
+
+    Create cassandra.log
+
+commit ee2dce1a5503000985a4cf9dfddc40ca8966ae7e
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:15:56 2023 +0200
+
+    Create nifi.log
+
+commit 55bebca06d506398c1cb2de4bc94265b1b246307
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:13:08 2023 +0200
+
+    Update streamingestmanager.py
+
+commit 82db6665c2bf563df50782c73311f334672940a2
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 17:12:28 2023 +0200
+
+    Update batchingestmanager.py
+
+commit f1797cb43d1354a49c36ba5eb637054a6233a5d1
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 16:13:08 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 396fd94cbd00ca1d2a4980711136bd9380063728
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 16:12:09 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit dfb71f152ad1611ed680e44d61ff3fe5eadf45d7
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 16:11:24 2023 +0200
+
+    streamMonitor
+
+commit 0a9e2bb6cf4fbbc4e89767aec690ef489b2ac6ad
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 16:09:51 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 8567830cdc27e2740ee18b8909a31a40eae483b4
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:53:40 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit f9dadc4bd6dc96e1a725c2c0f462fb8ababc29b5
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:48:58 2023 +0200
+
+    Add files via upload
+
+commit 8db2d0bcc014398817b98be987dc68dddcdb69b1
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:48:45 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 131a6552d04dba906336e55a5d6f0a2150d44658
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:44:42 2023 +0200
+
+    the principle
+
+commit 5a1053c8be7de582d7ad54cd8475b96498297067
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:44:06 2023 +0200
+
+    Add files via upload
+
+commit 8821e01c0622d221303255f1d2e7cf2dced5ab9f
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:43:31 2023 +0200
+
+    the principle
+
+commit 830254357b88afacb48132777ee5eda6fa8a30a5
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:42:38 2023 +0200
+
+    principle
+
+commit f1f9017b0b378c3e1e599729683cac68713eba45
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:42:09 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit ecb6d0fcee2d9ea832d92a78e2df89cec2da08d8
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:28:40 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit b64d35cb55ac8deee0ed6178a41edd02bad98e5c
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:27:46 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 5a14fce0e109ed8b983cfd3c50dcddc588f64f02
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:27:30 2023 +0200
+
+    deploy
+
+commit 698a9aecbf50048b189486c763efcc645207b3e4
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:27:07 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 4b1761fca30737833b8c0d087df133916cc9ca87
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:22:17 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 517cc0062456f5c8a6c55693de7e704cf0a1ebea
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:15:24 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit dc63684f786f84115df993e5317d2e6122d3efda
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:06:32 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 57980b82d12dc5e2cb2459329fecbe140856fb01
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:06:11 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit f6f0790f577018d3be6121927f0b41def3e8319f
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:05:26 2023 +0200
+
+    tester web screenshot
+
+commit 8a7e031ac06b9bfcd71e1621ce94458579c851af
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:04:42 2023 +0200
+
+    Create info.md
+
+commit 65a3479f12a797fbc1d90ffae34f88d9a25e15a5
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 15:02:45 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 34a476ebeba4982370559d20663eae672b62ec60
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:57:44 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit d82724655f7cadf2c305d5dce9913699125a3032
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:52:14 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit b18ddd5128c9b8cc2bf9f06e05a6a6df2068445e
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:49:17 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit 4e4b4d74f57f889272a40c8844587eb354be2416
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:48:00 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit cc9c10d4938422898156a7a9ee979400ed05b3af
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:47:44 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit f8e687e0bb825c7bdb7fc4f8b771ca63d7663611
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:39:57 2023 +0200
+
+    Update Assignment-2-Deployment.md
+
+commit a17214d7d3710a8244660aeeb6e3573656e6fffd
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:39:12 2023 +0200
+
+    Rename Assignment-2-Deployment-md to Assignment-2-Deployment.md
+
+commit b97b65d575d9b80f2c1c8c17a7f8aca1d3aa1aac
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:38:34 2023 +0200
+
+    Update Assignment-2-Deployment-md
+
+commit c033ad5441295f375a8767ed78d53b987dec9137
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:35:50 2023 +0200
+
+    Add deployment instructions
+
+commit de0f5f6cd03fdf34e8a403a10779376209e87cf8
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:28:39 2023 +0200
+
+    Delete datainfo.md
+
+commit 6d8ee4c410e5a460639a1d9bbf8d197e2147525e
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:28:09 2023 +0200
+
+    Create datainfo.md
+
+commit 029e63405a8b765dc202c00592e1c0ff363ce8d8
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:26:54 2023 +0200
+
+    Add sample data from the Korkeasaari Zoo
+
+commit 5a264d7e746b0a4b952e75cc3eb3ab7ac37fb162
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:25:44 2023 +0200
+
+    Add 3-node cassandra cluster deployer
+
+commit f779e714e9b9c2a9721a0f07d0892ece649affdb
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:23:51 2023 +0200
+
+    Add tester + Monitor interface
+
+commit fdfe7134ff66ef06671f1468480bc137f0730eec
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:22:44 2023 +0200
+
+    Add tenantService profiles (with limiters within)
+
+commit ce6aa19902b6ab554fe774e4beb6e8658ca9502d
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:20:49 2023 +0200
+
+    Add clientManagers and clientApps abstractions
+
+commit d2c6d69c254a0f6aa4cb95ba194abd71d23e839a
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:19:20 2023 +0200
+
+    Delete a
+
+commit 92348e630d321001cc1d4d1859fe40d09c7d6f81
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:19:00 2023 +0200
+
+    Add driver for clientManagers and test interface
+
+commit 8d483067f0f74e4cd73229c43ad9a7137231ad76
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:17:38 2023 +0200
+
+    Create a
+
+commit 94f924555461b2e4f256dbd2dc75260c766d8e9e
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:15:50 2023 +0200
+
+    Delete a
+
+commit 05217e84bd695e90f53925a62e8fef9b77717232
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:15:32 2023 +0200
+
+    Add all client stream/batch ingest apps + mqttPub
+
+commit 11466e9163f92108cbff04f8b1188d908a80eb79
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:12:58 2023 +0200
+
+    Create a
+
+commit 4d63ec7e97d7c333542d3ce13f431ce41d1dc800
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:12:12 2023 +0200
+
+    Delete a
+
+commit 8cee2ece65b64a9a5f973b95f21f7fa3054fb06e
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:12:00 2023 +0200
+
+    Create a
+
+commit fbfdb96cdf1f0932fcb36bd3a4a040dd3160bbdb
+Author: AleksiSupikoski <54030510+AleksiSupikoski@users.noreply.github.com>
+Date:   Thu Mar 16 14:10:25 2023 +0200
+
+    Initial commit
