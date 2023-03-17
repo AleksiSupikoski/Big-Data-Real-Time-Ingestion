@@ -157,7 +157,7 @@ I have actually done this, as i saw it more logical for managers to be running o
 
 ### 3.2 In the stream ingestion pipeline, assume that a tenant has to ingest the same data but to different sinks, e.g., mybdp-coredms for storage and a new mybdp-streamdataprocessing component, what features/solutions you can provide and recommend to your tenant?
 
-In this case i would provide a special service for the tenant allowing him to have "two client application" running and one having more than one output port, one of which connecting the two applications together.
+In this case i would provide a special service for the tenant allowing him to have "two client application" running and one having more than one output port, one of which connecting the two applications together in a pipeline.
   
 
 ### 3.3 The tenant wants to protect the data during the ingestion by using some encryption mechanisms to encrypt data in files. Thus, clientbatchingestapp has to deal with encrypted data. Which features/solutions you recommend the tenants and which services you might support them for this goal?
@@ -166,3 +166,7 @@ The tenant would have to add to his batchIngestApp an additional component at th
 
 ### 3.4  In the case of near-realtime ingestion, we want to (i) detect the quality of data to allow ingestion only for data with a pre-defined quality of data condition and (ii) store metadata, including detected quality, into the platform, how would you suggest a design/change of your design for achieving this?
   
+Assuming that the data is coming from IoT applications, the application could include RSSI (Received Signal Strength Indicator) and SNR (Signal to Noise Ratio) in the payload, to then support possible data corruption assessment in metadata. Then if we know how much data has been dropped (dropped packets, or information from MQTT broker about dropped messages, e.g. if we are useng lower quality of service) as well as failed ingestions due to some reason, we can add that metadata to some time ranges, indicating that this data has lower "time resolution" this kind of metadata could be stored for example in additional table created for it.
+  
+  
+### 3.5 If a tenant has multiple clientbatchingestapp, each is suitable for a type of data and has different workloads, such as complex transformation or feature engineering (e.g., different CPUs, memory consumption and execution time), how would you extend your design and implementation in Part 1 (only explain the concept/design) to support this requirement? 
