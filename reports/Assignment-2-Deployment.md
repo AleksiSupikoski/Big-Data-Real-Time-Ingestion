@@ -134,6 +134,8 @@ The clientStreamIngestApp Monitor return refined (calculated) metrics as well as
   
 #### Deploy clientApps & get metrics
 Drag and drop any client App from `/code/clientApps` the web interface will confirm the receive. In order to deploy client's app, press deploy.
+
+<p align="center"><img src="img/Load.png")<p>
   
 <p align="center"><img src="img/deployed.png")<p>
   
