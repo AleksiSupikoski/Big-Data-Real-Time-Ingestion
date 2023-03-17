@@ -135,7 +135,7 @@ The data used is the same data as in part 1, IoT data from Korkeasaari zoo. The 
   
 <p align="center"><img src="img/StreamTests.png" width="750")<p>
   
-Accordin to this data the maximum throughput is 2x 80.3 records/s or in size 2x 22.5 kBps. There was also a MQTT publisher running on the same Nifi node. The test environment had 1-node Nifi cluster.
+According to this data retrieved from two simultaneously running clientStreamIngestApps the maximum throughput is 2x 80.3 records/s or in size 2x 22.5 kBps. There was also a MQTT publisher running on the same Nifi node. The test environment had 1-node Nifi cluster. 
   
 ### 2.4 clientstreamingestapp decides to report the its processing rate, including average ingestion time, total ingestion data size, and number of messages to mysimbdp-streamingestmonitor within a pre- defined period of time. Design the report format and explain possible components, flows and the mechanism for reporting.
   
